@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bancoxyz</groupId>
-	<artifactId>bff_atm</artifactId>
+	<artifactId>bff-atm</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bff_atm</name>
+	<name>bff-atm</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

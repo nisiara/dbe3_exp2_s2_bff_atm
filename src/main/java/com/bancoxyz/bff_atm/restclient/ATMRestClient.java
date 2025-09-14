@@ -9,7 +9,7 @@ import com.bancoxyz.bff_atm.model.dto.AnnualAccountResponse;
 import com.bancoxyz.bff_atm.model.dto.InterestResponse;
 import com.bancoxyz.bff_atm.model.dto.TransactionResponse;
 
-@FeignClient(name = "backend", url = "http://localhost:8090/backend/api")
+@FeignClient(name = "backend", url = "http://localhost:8080/backend/api")
 public interface ATMRestClient {
 
   @GetMapping("/transaction")
