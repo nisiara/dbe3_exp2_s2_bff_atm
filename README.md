@@ -34,9 +34,8 @@ Válida que las transacciones sean de tipo 'valid'. Retorna el id, fecha, monto 
 - password: password
 
 ```bash
-curl -X GET https://localhost:8443/api/atm-mobile/transaction --user "name:password"
+curl -k -X GET https://localhost:8443/api/atm-mobile/valid-transaction --user "user:password"
 ```
-
 
 ## 🔗 Link
 [![Github](https://img.shields.io/badge/github-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nisiara/dbe3_exp2_s2_bff_atm.git)
