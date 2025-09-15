@@ -30,11 +30,9 @@ Este repositorio en particular representa en BFF que tiene los servicios que ent
 
 #### Endpoint Transacciones
 Válida que las transacciones sean de tipo 'valid'. Retorna el id, fecha, monto y tipo de transacción.
-- username: user
-- password: password
 
 ```bash
-curl -k -X GET https://localhost:8443/api/atm-mobile/valid-transaction --user "user:password"
+curl -k -X GET https://localhost:8443/api/bff-atm/valid-transaction --user "user:password"
 ```
 
 ## 🔗 Link
