@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bancoxyz.bff_atm.model.dto.AnnualAccountResponse;
-import com.bancoxyz.bff_atm.model.dto.InterestResponse;
 import com.bancoxyz.bff_atm.model.dto.TransactionResponse;
 import com.bancoxyz.bff_atm.service.ATMService;
 
@@ -26,19 +24,9 @@ public class ATMController {
     this.atmService = atmService;
   }
 
-  @GetMapping("/invalid-transaction")
+  @GetMapping("/valid-transaction")
   public ResponseEntity<List<TransactionResponse>> getInvalidTransactions(){
-    return ResponseEntity.ok(atmService.invalidTransactions());
+    return ResponseEntity.ok(atmService.validTransactions());
   }    
-
-  @GetMapping("/interest")
-  public ResponseEntity<List<InterestResponse>> getAllInterests() {
-    return ResponseEntity.ok(atmService.findAllInterests());
-  }
-
-  @GetMapping("/annual-account")
-  public ResponseEntity<List<AnnualAccountResponse>> getAllAnnualAccounts() {
-    return ResponseEntity.ok(atmService.findAllAnnualAccounts());
-  }
   
 }

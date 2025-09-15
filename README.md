@@ -34,7 +34,7 @@ Válida que las transacciones sean de tipo 'valid'. Retorna el id, fecha, monto 
 - password: password
 
 ```bash
-curl -X GET http://localhost:8443/api/atm-mobile/transaction
+curl -X GET https://localhost:8443/api/atm-mobile/transaction --user "name:password"
 ```
 
 
