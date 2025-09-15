@@ -11,8 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class TransactionResponse {
-  private Long id;
-  private String transactionDate;
   private Integer amount;
   private String type;
 }
